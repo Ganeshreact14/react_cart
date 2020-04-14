@@ -6,9 +6,7 @@
   "engines": {
     "node": "12.16.x"
   },
-  "scripts": {
-    "start": "webpack-dev-server --config=config/webpack.dev.js",
-    "build": "NODE_ENV=production webpack --config=config/webpack.prod.js"
-  }
-  
+  "devDependencies": {
+  "js-yaml": ">=3.13.1"
+}
 }
