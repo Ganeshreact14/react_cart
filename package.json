@@ -8,5 +8,8 @@
   },
   "devDependencies": {
   "js-yaml": ">=3.13.1"
-}
+},
+  "scripts": {
+    "start": "webpack-dev-server --config=config/webpack.dev.js"
+  }
 }
