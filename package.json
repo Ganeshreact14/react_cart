@@ -4,7 +4,8 @@
   "description": "Simple react shopping cart without using redux",
   "main": "main.js",  
   "scripts": {
-    "start": "webpack-dev-server --config=config/webpack.dev.js"
+    "start": "webpack-dev-server --config=config/webpack.dev.js",
+    "build": "NODE_ENV=production npm run clean && webpack -p --config=config/webpack.prod.js"
   },
   "keywords": [
     "reactjs",
