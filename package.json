@@ -2,10 +2,7 @@
   "name": "react-shopping-cart",
   "version": "0.1.0",
   "description": "Simple react shopping cart without using redux",
-  "main": "main.js",
-  "engines": {
-    "node": "12.16.x"
-  },
+  "main": "main.js",  
   "scripts": {
     "start": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "NODE_ENV=production webpack --config=config/webpack.prod.js"
@@ -17,6 +14,9 @@
   ],
   "author": "Ganesh",
   "license": "ISC",
+  "engines": {
+    "node": "12.16.x"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "prop-types": "^15.5.10",
