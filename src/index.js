@@ -46,7 +46,7 @@ class App extends Component {
   } */
    getProducts() {
     let url =
-      "https://api.jsonbin.io/b/5e8c3a45af7c476bc47e477d";
+      "https://api.jsonbin.io/b/5e8c3ad0ff9c906bdf1d5380";
     axios.get(url).then(response => {
 				let prod_id =0;
 				Object.keys(response.data.items).forEach((key,index) => { 					  				
