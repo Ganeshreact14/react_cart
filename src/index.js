@@ -46,7 +46,7 @@ class App extends Component {
     });
   } */
    getProducts() {
-    let url = pdtDetail ;
+    let url = "cart.json";
     axios.get(url).then(response => {
 				let prod_id =0;
 				Object.keys(response.data.items).forEach((key,index) => { 					  				
