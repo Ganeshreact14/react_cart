@@ -7,7 +7,7 @@ const webpackCommon = require("./webpack.common");
 module.exports = merge.smart(webpackCommon, {
   mode: "development",
   output: {
-    publicPath: "https://ganeshreact14.github.io/react_cart/", // deploy on server with /app/ folder name
+    publicPath: "/", // deploy on server with /app/ folder name
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "../docs")
   },
@@ -19,7 +19,7 @@ module.exports = merge.smart(webpackCommon, {
     contentBase: path.join(__dirname, "docs"),
     host: "localhost",
     port: 8015,
-    publicPath: "https://ganeshreact14.github.io/react_cart/"
+    publicPath: "/"
   },
   devtool: "cheap-eval-source-map",
   plugins: [new webpack.HotModuleReplacementPlugin()]
