@@ -6,6 +6,7 @@ import Products from "./components/Products";
 import Footer from "./components/Footer";
 import QuickView from "./components/QuickView";
 import "./scss/style.scss";
+import pdtDetail from "cart.json";
 
 class App extends Component {
   constructor() {
@@ -45,8 +46,7 @@ class App extends Component {
     });
   } */
    getProducts() {
-    let url =
-      "https://api.jsonbin.io/b/5e8c3ad0ff9c906bdf1d5380";
+    let url = pdtDetail ;
     axios.get(url).then(response => {
 				let prod_id =0;
 				Object.keys(response.data.items).forEach((key,index) => { 					  				
