@@ -46,7 +46,7 @@ class App extends Component {
     });
   } */
    getProducts() {
-    let url = "cart.json";
+    let url = "https://github.com/Ganeshreact14/react_cart/blob/master/cart.json";
     axios.get(url).then(response => {
 				let prod_id =0;
 				Object.keys(response.data.items).forEach((key,index) => { 					  				
