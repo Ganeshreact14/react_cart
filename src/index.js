@@ -6,7 +6,7 @@ import Products from "./components/Products";
 import Footer from "./components/Footer";
 import QuickView from "./components/QuickView";
 import "./scss/style.scss";
-import pdtDetail from "cart.json";
+//import pdtDetail from "cart.json";
 
 class App extends Component {
   constructor() {
